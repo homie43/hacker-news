@@ -1,0 +1,26 @@
+@import "../../style/sass/base";
+
+h1 {
+    margin: 5px 0 5px 12px;
+    color: $header-root;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $dark-blue;
+    border-bottom: 1px solid $black;
+}
+
+.root {
+    margin: 14px 12px 0 0;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: $header-root;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+        color: $light-pink;
+    }
+}

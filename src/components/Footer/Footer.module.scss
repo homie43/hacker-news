@@ -1,0 +1,19 @@
+@import "../../style/sass/base";
+
+.h3 {
+    margin: 10px;
+    color: $light-pink;
+}
+
+.link {
+    text-decoration: none;
+    color: $light-pink;
+}
+
+footer {
+    padding-bottom: 12px;
+    text-align: center;
+    margin-top: 40px;
+    background-color: $dark-blue;
+    border-top: 1px solid $black;
+}

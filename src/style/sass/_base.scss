@@ -1,0 +1,46 @@
+$dark-grey: #151515;
+$black: #000;
+$gradient-base: #d7d7d7;
+$light-pink: #dcd6d6;
+$pale-purple: #e5e0e7;
+$dark-blue: #313a46;
+$header-root: #8391a2;
+
+@mixin reset_margin {
+    margin: 0;
+}
+
+@mixin fl-cen {
+    display: flex;
+    align-items: center;
+}
+
+@keyframes MoveUpInitial {
+    to {
+        transform: translate3d(0, -105%, 0);
+    }
+}
+
+@keyframes MoveUpEnd {
+    from {
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+
+    &-track {
+        background: #efefef;
+    }
+
+    &-thumb {
+        background: #151515;
+        &:window-inactive {
+            background: #151515;
+        }
+    }
+}

@@ -1,0 +1,170 @@
+@import "base";
+
+body {
+    margin: 0 auto;
+    overflow-y: scroll;
+    font-family: "Inter", "Arial", sans-serif;
+    background-color: #f9f5fb;
+}
+
+#root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+pre {
+    overflow-x: auto;
+}
+
+h1 {
+    margin: 5px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    margin-top: 47px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0 0 0 10px;
+
+    @media (min-width: 930px) {
+        @include reset_margin;
+    }
+}
+
+.h3 {
+    margin: 10px;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: center;
+}
+
+.comment-counter-wrapper {
+    margin: 0 10px;
+    background-color: $dark-blue;
+    border: 1px solid $black;
+    color: $light-pink;
+    padding: 0.5rem 0.5rem;
+    cursor: default;
+
+    @media (min-width: 930px) {
+        @include reset_margin;
+    }
+}
+
+.comments-header {
+    @include fl-cen;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    @media (min-width: 930px) {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.comment-info {
+    font-size: 1.1em;
+    padding: 5px;
+    margin: 10px 0;
+    background-color: $pale-purple;
+    border-radius: 5px;
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.comment {
+    padding: 5px 0 5px 20px;
+}
+
+.comment-text {
+    padding: 0 10px;
+}
+
+.comments-list {
+    @include fl-cen;
+    flex-direction: column;
+    padding: 0 10px;
+
+    .lazyload-wrapper {
+        width: 100%;
+        @media (min-width: 930px) {
+            width: 900px;
+        }
+    }
+
+    & > .lazyload-wrapper > .comment {
+        padding: 5px 0;
+    }
+}
+
+.story-preview {
+    padding: 10px;
+}
+
+.stories-list {
+    @include fl-cen;
+    flex-direction: column;
+    margin: 10px;
+
+    .lazyload-wrapper {
+        margin-top: 5px;
+        width: 100%;
+        border: 1px solid $dark-blue;
+        border-radius: 5px;
+
+        @media (min-width: 930px) {
+            width: 900px;
+        }
+    }
+}
+
+.story-info {
+    display: flex;
+    flex-wrap: wrap;
+
+    div {
+        margin-left: 2px;
+        margin-right: 5px;
+        font-size: 0.9em;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.refresh-btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @media (min-width: 930px) {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.comment-btn {
+    margin: 10px 0 0 0;
+}
